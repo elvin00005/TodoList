@@ -6,7 +6,12 @@ import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <div className={cn(styles.container, "d-flex flex-column p-2")}>
+    <div
+      className={cn(
+        styles.container,
+        "d-flex flex-column align-items-center p-2"
+      )}
+    >
       <Link to="/">Main</Link>
       <Link to="/todolist">TodoList</Link>
     </div>
